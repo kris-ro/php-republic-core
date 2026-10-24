@@ -1,0 +1,23 @@
+{
+    "name": "kris-ro/php-republic-core",
+    "description": "Core engine for PHP Republic MVC Framework",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "ext-pdo_mysql": "*",
+        "ext-curl": "*",
+        "kris-ro/php-config": "^1.0",
+        "kris-ro/validator": "^1.0",
+        "kris-ro/php-dependency-injection": "^1.0",
+        "kris-ro/php-database-model": "^1.0",
+        "monolog/monolog": "^3.10",
+        "phpmailer/phpmailer": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KrisRo\\PhpRepublic\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
