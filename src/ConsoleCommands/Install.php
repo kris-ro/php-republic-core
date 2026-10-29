@@ -54,11 +54,11 @@ class Install {
       return;
     }
 
+    $this->setCidImagePath();
+
     if (!$this->saveConfig()) {
       self::echoError("Can not save config data at {$this->jsonLocalConfigPath}.");
     }
-
-    $this->setCidImagePath();
 
     $this->printInstructions();
   }
