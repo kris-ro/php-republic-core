@@ -58,6 +58,8 @@ class Install {
       self::echoError("Can not save config data at {$this->jsonLocalConfigPath}.");
     }
 
+    $this->setCidImagePath();
+
     $this->printInstructions();
   }
 
@@ -210,6 +212,10 @@ class Install {
     }
 
     return true;
+  }
+
+  private function setCidImagePath() {
+    $this->localConfig['email_embeded_cids']['cid:republic-logo-cid'] = APP_ROOT . DS . 'public_html/assets/phprepublic.png';
   }
 
   private function printInstructions() {
